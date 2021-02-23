@@ -1,7 +1,4 @@
 # write your code here!
-# print('Meet a conicoin!')
-conicoins = int(input())
 
-print('I have', conicoins, 'conicoins.')
-print('{} conicoins cost {} dollars.'.format(conicoins, conicoins * 100))
-print('I am rich! Yippee!')
+conicoins = float(input('Please, enter the number of conicoins you have: '))
+exchange_rate = float(input('Please, enter the exchange rate: '))
