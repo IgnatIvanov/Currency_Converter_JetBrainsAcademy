@@ -41,6 +41,8 @@ files:
             for i, repl in enumerate(reply_parsed):
                 try:
                     repl = ast.literal_eval(repl)
+                except SyntaxError:
+                    return CheckResult.wrong("The format of the data is incorrect")
                 except ValueError:
                     return CheckResult.wrong("The format of the data is incorrect")
                 if type(repl) != dict:
